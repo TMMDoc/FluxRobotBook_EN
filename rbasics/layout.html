@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="../res/tree.css">
   <link rel="stylesheet" href="../res/sibling.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <title>Best practices</title>
+  <title>Layout and limitations</title>
 </head>
 <body id="site-body" onload="sLoaded()">
     <header id="site-header">
@@ -23,15 +23,15 @@
   <ul>
     <li><button class="tree blank"></button><a href="../index.html">Welcome to FluxRobot</a></li>
     <li>
-      <button class="tree closed"></button>
-      <a href="../rbasics/index.html">Basics</a>
-      <ul class="hide">
-        <li><button class="tree blank"></button><a href="../rbasics/coordsystems.html">Basic coordinate systems</a></li>
-        <li><button class="tree blank"></button><a href="../rbasics/fanuccoords.html">Robot coordinates</a></li>
-        <li><button class="tree blank"></button><a href="../rbasics/fanucframes.html">Fanuc Frame concept</a></li>
-        <li><button class="tree blank"></button><a href="../rbasics/fanuccordmove.html">Fanuc Motion commands </a></li>
-        <li><button class="tree blank"></button><a href="../rbasics/fanucaxlimits.html">Fanuc Axlimits</a></li>
-        <li><button class="tree blank"></button><a href="../rbasics/layout.html">Layout and limitations</a></li>
+      <button class="tree open"></button>
+      <a href="index.html">Basics</a>
+      <ul>
+        <li><button class="tree blank"></button><a href="coordsystems.html">Basic coordinate systems</a></li>
+        <li><button class="tree blank"></button><a href="fanuccoords.html">Robot coordinates</a></li>
+        <li><button class="tree blank"></button><a href="fanucframes.html">Fanuc Frame concept</a></li>
+        <li><button class="tree blank"></button><a href="fanuccordmove.html">Fanuc Motion commands </a></li>
+        <li><button class="tree blank"></button><a href="fanucaxlimits.html">Fanuc Axlimits</a></li>
+        <li><button class="tree blank"></button><a class="active" href="layout.html">Layout and limitations</a></li>
       </ul>
     </li>
     <li>
@@ -133,11 +133,11 @@
       </ul>
     </li>
     <li>
-      <button class="tree open"></button>
-      <a class="active" href="index.html">Best practices</a>
-      <ul>
-        <li><button class="tree blank"></button><a href="layout.html">Layout</a></li>
-        <li><button class="tree blank"></button><a href="adjustments.html">Improve accuracy</a></li>
+      <button class="tree closed"></button>
+      <a href="../bestpractise/index.html">Best practices</a>
+      <ul class="hide">
+        <li><button class="tree blank"></button><a href="../bestpractise/layout.html">Layout</a></li>
+        <li><button class="tree blank"></button><a href="../bestpractise/adjustments.html">Improve accuracy</a></li>
       </ul>
     </li>
     <li>
@@ -216,48 +216,58 @@
     </button>
   </div>
   <div>
-    <a href="index.html">Best practices</a>
+    <a href="index.html">Basics</a>
+  </div>
+  <div>/</div>
+  <div>
+    <a href="layout.html">Layout and limitations</a>
   </div>
 </nav>
 
             <div id="site-crumb-below">
                 <div id="site-toc-left">
                     <article id="article">
-                        <h1>Best practices</h1>
-<div id="preamble">
-<div class="sectionbody">
+                        <h1>Layout and limitations</h1>
 <div class="paragraph">
-<p>A good robotic solution mainly is based on the following items</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_layout">Layout</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>A good layout is most important for a good workflow. Try not to place the robot right in front of the tooling, it will result in many collisions with the part or with the robot.</p>
+<p>The material flow is in a clock wise direction.</p>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="img/bb1.png" alt="t" width="250"></span>
-<span class="image"><img src="img/bb2.png" alt="t" width="250"></span></p>
+<p><span class="image"><img src="img/workflow.png" alt="workflow"></span></p>
 </div>
 <div class="paragraph">
-<p>off centered tooling vs centered tooling</p>
+<p>The offline simulation supports the</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Pickup process from a pallet or dispenser</p>
+</li>
+<li>
+<p>Centering process</p>
+</li>
+<li>
+<p>Bending process</p>
+</li>
+<li>
+<p>Part deposit</p>
+</li>
+</ul>
 </div>
 <div class="paragraph">
-<p>FluxRobot offers a setting that by default the tooling is off centered:
-<span class="image"><img src="img/bb3.png" alt="BB3"></span></p>
+<p>The RobotHMI / Postprocessor supports</p>
 </div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_gripper_design">Gripper design</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>It is essential that the part could be bend without collisions of the gripper with the machine or the robot. It is advised for parts with bends on different corners to start with a 45 degree gripper which covers the maximum final pssible gripping area.</p>
-</div>
-<div class="paragraph">
-<p><span class="image"><img src="img/bestprac.png" alt="bestprac"></span></p>
+<div class="ulist">
+<ul>
+<li>
+<p>Stack height control</p>
+</li>
+<li>
+<p>(Gripper change process)</p>
+</li>
+<li>
+<p>(tool change process)</p>
+</li>
+</ul>
 </div>
 <div class="admonitionblock tip">
 <table>
@@ -266,54 +276,21 @@
 <div class="title">Tip</div>
 </td>
 <td class="content">
-See the gripper design chapter for more details
+See the best practises chapter about recommended dimensions and positions of the components.
 </td>
 </tr>
 </table>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_reachability">Reachability</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>Many layout designs do not suffer because positions are not reachable but because the part collides with the robot itself.</p>
-</div>
-<div class="paragraph">
-<p>image</p>
-</div>
-<div class="paragraph">
-<p>A first basic measure is not to place pickup and bend areas closer than &#8230;&#8203; to the robot.</p>
-</div>
-<div class="paragraph">
-<p>image</p>
-</div>
-</div>
 </div>
 
                     </article>
                 </div>
                 <div id="site-toc-holder">
-                    <aside id="site-toc">
-  <h3>Contents</h3>
-  <ul>
-    <li level="1">
-      <a href="#_layout">Layout</a>
-    </li>
-    <li level="1">
-      <a href="#_gripper_design">Gripper design</a>
-    </li>
-    <li level="1">
-      <a href="#_reachability">Reachability</a>
-    </li>
-  </ul>
-</aside>
-
+                    <aside id="site-toc"></aside>
                 </div>
             </div>
             <nav class="pagination">
-  <span class="prev"><a href="../lsprogramming/fanuchw/communication.html">Communication</a></span>
-  <span class="next"><a href="layout.html">Layout</a></span>
+  <span class="prev"><a href="fanucaxlimits.html">Fanuc Axlimits</a></span>
+  <span class="next"><a href="../setup_robot/index.html">Setup the robot</a></span>
 </nav>
 
         </div>

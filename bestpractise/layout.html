@@ -31,6 +31,7 @@
         <li><button class="tree blank"></button><a href="../rbasics/fanucframes.html">Fanuc Frame concept</a></li>
         <li><button class="tree blank"></button><a href="../rbasics/fanuccordmove.html">Fanuc Motion commands </a></li>
         <li><button class="tree blank"></button><a href="../rbasics/fanucaxlimits.html">Fanuc Axlimits</a></li>
+        <li><button class="tree blank"></button><a href="../rbasics/layout.html">Layout and limitations</a></li>
       </ul>
     </li>
     <li>
@@ -282,11 +283,32 @@ See the gripper design chapter for more details
 <div class="paragraph">
 <p>Many layout designs do not suffer because positions are not reachable but because the part collides with the robot itself.</p>
 </div>
+<div class="sect2">
+<h3 id="_pickup">Pickup</h3>
 <div class="paragraph">
-<p>image</p>
+<p>To minimize collisions best practise is tilt the stack away from the robot. A tilting angle of 10 degrees is common practise</p>
 </div>
 <div class="paragraph">
-<p>A first basic measure is not to place pickup and bend areas closer than &#8230;&#8203; to the robot.</p>
+<p><span class="image"><img src="img/pickup.png" alt="pickup"></span></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_regrip_station">Regrip station</h3>
+<div class="paragraph">
+<p>The regrip from below has the hazard of exceeding the axis limits of the J5 axis. It is advised to place regrip station as far as possible away from the robot and at least in a height of 600mm.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="img/regrip.png" alt="regrip"></span></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_centering_table">Centering table</h3>
+<div class="paragraph">
+<p>The centering table bears the risk that you exceed the maximal reachable height with the retraction motion. It is advised place the centering table less then 600mm height.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="img/center.png" alt="center"></span></p>
+</div>
 </div>
 </div>
 </div>
@@ -305,6 +327,15 @@ See the gripper design chapter for more details
     </li>
     <li level="1">
       <a href="#_reachability">Reachability</a>
+    </li>
+    <li level="2">
+      <a href="#_pickup">Pickup</a>
+    </li>
+    <li level="2">
+      <a href="#_regrip_station">Regrip station</a>
+    </li>
+    <li level="2">
+      <a href="#_centering_table">Centering table</a>
     </li>
   </ul>
 </aside>
