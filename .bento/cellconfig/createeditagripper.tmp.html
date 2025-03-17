@@ -1,0 +1,375 @@
+<div id="toc" class="toc">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_create">Create</a></li>
+<li><a href="#_suction_cup_types">Suction Cup Types</a></li>
+<li><a href="#_import">Import</a></li>
+<li><a href="#_gripper_types">Gripper Types</a>
+<ul class="sectlevel2">
+<li><a href="#_basic_gripper">Basic Gripper</a></li>
+<li><a href="#_two_layered_gripper">Two- Layered Gripper</a></li>
+<li><a href="#_multi_circuit_grippers">Multi- Circuit GRIPPERS</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="_create">Create</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>To create an individual gripper, data of the wrist, the optional base plate, the suction plate, and the suction cups, with the corresponding positions are required.</p>
+</div>
+<div class="paragraph">
+<p>For this purpose a DXF file, including the respective geometry and parameters can be created.</p>
+</div>
+<div class="paragraph">
+<p>Create your own gripper geometry with the desired suction cups, using the drawing module.
+Alternatively, an existing DXF drawing can also be imported and edited.</p>
+</div>
+<div class="paragraph">
+<p><strong>Procedure:</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Open a new drawing inside Flux and select the sketch option.</p>
+</li>
+</ol>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/sketch.png" alt="sketch">
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="2">
+<li>
+<p>Create a drawing of the gripper with the wrist, base plate and suction cup plate and enter (alternatively, open an existing DXF drawing and adapt it as required).
+<strong>C:\ProgramData\Metamation\Flux\BGrippers\</strong></p>
+</li>
+<li>
+<p>Apply a different colour (e.g. cyan) to the
+contour of the base plate.</p>
+</li>
+</ol>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/selectlayer.png" alt="selectlayer">
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="4">
+<li>
+<p>For a correct graphical display of the optional base plate, it must be stored in a separate layer. In the drawing module with the entry <strong>BasePlate</strong> at the corresponding colour (here cyan), the necessary layer can be define.</p>
+</li>
+</ol>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/applycolor.png" alt="applycolor">
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="5">
+<li>
+<p>Make sure that the centre of the wrist is at the drawing zero point and input the required text inputs for the parameters.</p>
+</li>
+</ol>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/sketchcenter.png" alt="sketchcenter">
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="6">
+<li>
+<p>Many of the settings for this gripper come from text entities that are of the form KEY=VALUE. Here are the possible keys, with their meanings</p>
+</li>
+</ol>
+</div>
+<table class="tableblock frame-all grid-all fit-content">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top"><strong>key</strong></th>
+<th class="tableblock halign-left valign-top"><strong>Meaning</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Name</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The name of the gripper</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Weight</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Weight of the gripper, in kg.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>WRISTDIA</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Wrist diameter (must be 120/180 corresponding to BM60/BM150)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>WRISTTHICKNESS</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The thickness in Z of the wrist cylinder underneath. The wrist cylinder extends from Z=0 to this value</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>PLATEEXTENT</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The Z extent (in the form ZMIN:ZMAX) of the plate. Typically, one sets ZMIN the same as WRISTTHICKNESS, so the plate starts where the wrist-cylinder ends.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>BASEPLATEEXTENT</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The Z extent of the baseplate (see the section below on Two-Layered-Grippers)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>CUPNAME</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The type of suction cup used for this gripper (like SAXM50)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>CUPS</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The number of suction cups</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>CUP1POS</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The position of the first suction cup in the form X,Y</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>CUP2POS</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The position of the second suction cup</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>CUPNPOS</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The position of the Nth suction cup</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>CUPDIA</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Can be used instead of CUPNAME to specify a suction cup (not recommended).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Key</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Meaning</p></td>
+</tr>
+</tbody>
+</table>
+<div class="olist arabic">
+<ol class="arabic" start="7">
+<li>
+<p>Export as DXF file under the below mentioned path after updating the text parameters from the drawing module.</p>
+</li>
+</ol>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/exportgripperdxf.png" alt="exportgripperdxf">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_suction_cup_types">Suction Cup Types</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>In the Bend database there are different types of suction cups available, which can be used when configuring a new gripper.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/newitem38.png" alt="newitem38">
+</div>
+<div class="title">Figure 1. Suction cup database</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/newitem42.png" alt="newitem42">
+</div>
+<div class="title">Figure 2. Example gripper from database</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_import">Import</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>A vacuum suction gripper for the BendMaster machines can be imported from a DXF file. The DXF file represents the <strong>top</strong> view of the gripper (top view means from the suctions cups, NOT from the BendMaster). POLYLINE entities in the DXF provide the shape of the gripper plate, while additional information about the gripper (like its name, thickness, and suction cup placement).</p>
+</div>
+<div class="paragraph">
+<p>Files in the required format (DXF or ARV or Geo) can be imported into the Bend Database</p>
+</div>
+<div class="paragraph">
+<p><strong>Procedure:</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Open the <strong>Database</strong> inside FLUX</p>
+</li>
+<li>
+<p>Select the <strong>Bend Grippers</strong> option from the list</p>
+</li>
+<li>
+<p>Import the provided <strong>Gripper</strong> from the directory</p>
+</li>
+<li>
+<p>The new Gripper can be viewed inside the Gripper inventory inside the path <strong>C:\\ProgramData\\Metamation\\Flux\\BGrippers\\</strong></p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Here is how this gripper looks after importing (shown in two view from below and from above).</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/newitem58.png" alt="newitem58">
+</div>
+</div>
+<div class="paragraph">
+<p>As the part is moved around on the pallet, the gripper remains <strong>stuck</strong> to the part and the robot follows the movements.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/newitem57.png" alt="newitem57">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/newitem59.png" alt="newitem59">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_gripper_types">Gripper Types</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_basic_gripper">Basic Gripper</h3>
+<div class="paragraph">
+<p>See the simple drawing shown below, which defines a gripper and can be saved as dxf file to import back inside the Gripper inventory.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/basicgripper.png" alt="basicgripper">
+</div>
+</div>
+<div class="paragraph">
+<p>Here are some important points about how the DXF is drawn:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The origin of the drawing (0,0) corresponds to the robot wrist center. You can see this represented by a point and circle in the figure. (Both the point and the circle are not really needed for the gripper import, since the gripper center is implicitly always at the origin).</p>
+</li>
+<li>
+<p>This drawing also has some POINT entities representing each of the suction cup locations. Again, these are primarily for making the drawing more clear, and are not actually used by the gripper importer (the suction cup positions are specified by text entities).</p>
+</li>
+<li>
+<p>The actual plate shape is drawn as closed POLYLINE entities. If you have other polylines inside the outer one, they become <strong>holes</strong> in the plate.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Here is how this gripper looks after importing (shown in two view from below and from above).</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/newitem52.png" alt="newitem52">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/newitem53.png" alt="newitem53">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_two_layered_gripper">Two- Layered Gripper</h3>
+<div class="paragraph">
+<p>Slightly more complex grippers can be modeled using a separate <strong>BASEPLATE</strong> layer. Create a layer named <strong>BASEPLATE</strong> in the DXF file, and draw some closed POLYLINE shapes in that layer. Then this layer can have separate Z extrusion limits specified by the BASEPLATEEXTENT key.  The tools needed to create and edit layers are now added.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Click on Related when a drawing is being edited.</p>
+</li>
+<li>
+<p>Click on the Layers menu.</p>
+</li>
+<li>
+<p>The Layer editor dialog (shown below center) is displayed. Here you can add new layers, rename them, set colors and line-styles.</p>
+</li>
+<li>
+<p>In the drawing, clicking on an entity allows you to change the layer of that entity (see image above right). This selector appears only if there are multiple layers in the drawing.  After editing the drawing using these tools, save the drawing in DXF Format. Here is a DXF drawn using such a <strong>BASEPLATE</strong> layer (shown green in the image).</p>
+</li>
+</ol>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/newitem48.png" alt="newitem48">
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+For this gripper, the wrist extends from Z=0 to Z=23. Then, the <strong>base plate</strong> (green) extends from Z=23 to Z=40, as indicated by the <strong>BASEPLATEEXTENT</strong> key. Finally, the actual gripper plate (holding the suction cups) extends from Z=40 to Z=63, as indicated by the <strong>PLATEEXTENT</strong> key.
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+The gripper plate also has some hexagonal holes in it.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>When imported, this gripper looks like the image below:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/newitem47.png" alt="newitem47">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_multi_circuit_grippers">Multi- Circuit GRIPPERS</h3>
+<div class="paragraph">
+<p>You can create a multi-circuit gripper (a gripper that has several independent vacuum circuits). For such a gripper, each suction cup is assigned a non-zero <strong>group number</strong>.</p>
+</div>
+<div class="paragraph">
+<p>This assignment happens by using a special form of the CUP1POS, CUP2POS etc strings. These take the form:</p>
+</div>
+<div class="paragraph">
+<p><strong>CUP1POS = 340,120 ==6\</strong></p>
+</div>
+<div class="paragraph">
+<p><strong>CUP2POS = 420,140 ==8\</strong></p>
+</div>
+<div class="paragraph">
+<p>The value after the == is the suction group number for the cup. In this example, Cup 1 is assigned to suction group 6, Cup 2 is assigned to suction group 8 and so on.</p>
+</div>
+<div class="paragraph">
+<p>For a multi-circle gripper to be correctly configured, <strong>every</strong> cup must be assigned a suction group number in this manner.</p>
+</div>
+<div class="paragraph">
+<p>Below image shows how the multilayered Gripper will look like inside Bend Grippers Database.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/multilayergripper.png" alt="multilayergripper">
+</div>
+</div>
+</div>
+</div>
+</div>

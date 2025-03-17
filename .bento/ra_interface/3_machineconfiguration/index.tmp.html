@@ -1,0 +1,162 @@
+<div id="toc" class="toc">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_log_in_with_configuration_grant">Log in with configuration grant</a></li>
+<li><a href="#_software_for_configuring_a_device">Software for configuring a device</a></li>
+<li><a href="#_setting_up_your_ethercat_system">Setting up your EtherCAT system*</a></li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="_log_in_with_configuration_grant">Log in with configuration grant</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>For configuration in I/O Engineering, the user grant Modify configuration is
+required. See Operating manual- RobotStudio, section Managing user rights and
+write access on a controller.</p>
+</div>
+<div class="paragraph">
+<p>Start I/O Engineering
+1 Start RobotStudio and connect to the robot system to configure.
+2 Inthe ribbon of the Controller tab, select I/O Engineering.
+See Application manual- I/O Engineering for more information.
+Configure the network properties
+1 Inthe Controller tab in RobotStudio, select I/O Engineering. The I/O
+Engineering tab is displayed.
+2 Inthe Configuration browser, select EtherCAT (under I/O system).
+3 Inthe Properties browser, you can configure the following:
+xx2400000666
+Parameter
+Description
+Allowedvalues
+Identification
+Labelel that will help the operator to identify the internal
+device.
+Astring with maximum 80
+characters.
+Simulated
+Select Yes or No, indicating if the industrial net
+ork and all its connected I/O devices should be
+treated as simulated.
+The default
+value is No
+  Configuring the EtherCAT system
+ 5.1 Configuring the internal device properties
+Prerequisites
+Before configuring the internal device, make sure to set up your system according
+to Setting up your EtherCAT system on page23.
+Configure the internal device properties
+1 Inthe Controller tab in RobotStudio, select I/O Engineering. The I/O
+Engineering tab is displayed.
+2 Inthe Configuration browser, select the internal device.
+3 Inthe Properties browser, you can configure the following:
+xx2400000667
+Parameter
+Description
+Allowedvalues
+Name
+Enter the name to be used for the device.
+Astring with
+aximum 32
+characters.
+Identification
+Label
+his parameter is an optional way to provide a la
+el that will help the operator to identify the device.
+Astring with
+maximum 80
+characters</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_software_for_configuring_a_device">Software for configuring a device</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The EtherCAT internal device needs to be configured in I/O Engineering
+before it can be connected to a PLC/controller. Furthermore, the
+connecting PLC/controller might need a PC software tool to configure all
+connection parameters used to connect to the OmniCore system.</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>ESI file for configuring the internal device for an EtherCAT controller</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The provided ESI file for the OmniCore EtherCAT device is used to inform
+the connecting PLC /controller of supported connection parameters.</p>
+</div>
+<div class="paragraph">
+<p>The ESI file, <em>esi.xml</em>, for the internal device can be obtained from
+the RobotStudio or the OmniCore controller.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_setting_up_your_ethercat_system">Setting up your EtherCAT system*</h2>
+<div class="sectionbody">
+<div class="literalblock">
+<div class="content">
+<pre>Log in with configuration grant</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>For configuration in I/O Engineering, the user grant <strong>Modify
+configuration</strong> is required. See <em>Operating manual - RobotStudio</em>,
+section <em>Managing user rights and write access on a controller</em>.</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Start I/O Engineering</pre>
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Start RobotStudio and connect to the robot system to configure.</p>
+</li>
+<li>
+<p>In the ribbon of the <strong>Controller</strong> tab, select <strong>I/O Engineering</strong>.</p>
+<div class="literalblock">
+<div class="content">
+<pre>Configure the network properties</pre>
+</div>
+</div>
+</li>
+<li>
+<p>In the <strong>Controller</strong> tab in RobotStudio, select <strong>I/O Engineering</strong>. The
+<strong>I/O Engineering</strong> tab is displayed.</p>
+</li>
+<li>
+<p>In the <strong>Configuration</strong> browser, select <strong>EtherCAT</strong> (under I/O system).</p>
+</li>
+<li>
+<p>In the <strong>Properties</strong> browser, you can configure the following:</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Before configuring the internal device, make sure to set up your system
+according to <em>Setting up your EtherCAT system on page 23</em>.</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Configure the internal device properties</pre>
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>In the <strong>Controller</strong> tab in RobotStudio, select <strong>I/O Engineering</strong>. The
+<strong>I/O Engineering</strong> tab is displayed.</p>
+</li>
+<li>
+<p>In the <strong>Configuration</strong> browser, select the internal device.</p>
+</li>
+<li>
+<p>In the <strong>Properties</strong> browser, you can configure the following:</p>
+</li>
+</ol>
+</div>
+</div>
+</div>

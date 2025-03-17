@@ -1,0 +1,114 @@
+<div id="toc" class="toc">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_centering_table_in_flux">Centering Table in Flux</a></li>
+<li><a href="#_how_to_enable_centering_table">How to enable Centering table:</a></li>
+<li><a href="#_how_to_use_centering_table">How to Use Centering Table:</a></li>
+</ul>
+</div>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>The centering plate is calibrated with the 3 point clalibration just like the tilted pallet. See for details about the process.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="img/finecalib1.png" alt="finecalib1"></span></p>
+</div>
+<div class="paragraph">
+<p>The calibrated probe tool is used.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+all frames should be set to the values of FRAME 1 (machine - robot frame)
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>In the depicted example the centering table is calibrated with the frame: [-507 1239 679 42 -33.6 29.7] (in Robo world coord), Rotation sequence is ZYX (after). Use the frame tool to recalculate the rotation angles</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="img/centerframetool.png" alt="centerframetool"></span></p>
+</div>
+<div class="paragraph">
+<p>Coordinates in Robot coordinates</p>
+</div>
+<div class="paragraph">
+<p>4	-507.0	1239.0	679.0	42.0	-33.6	29.7	CENT</p>
+</div>
+<div class="paragraph">
+<p>Coordinates in Machine coordinates</p>
+</div>
+<div class="paragraph">
+<p>4	-1563.0	1239.0	182.0	43.6	-1.5	141.7	CENT</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_centering_table_in_flux">Centering Table in Flux</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><span class="image"><img src="img/center2.png" alt="center2"></span></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_how_to_enable_centering_table">How to enable Centering table:</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Open a program in Flux.</p>
+</div>
+<div class="paragraph">
+<p>Click on Add – Cell component</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/C1.png" alt="C1">
+</div>
+</div>
+<div class="paragraph">
+<p>Component glob will open and choose the Simple Centering Table. Set the values in following order to positioning the Centering table (Refer the attached image):</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Angle= 90
+Tilt X Angle= 0
+Tilt X Angle= 38
+X,Z position as -1400, -792
+Lift= 800</pre>
+</div>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="img/c2.png" alt="c2"></span></p>
+</div>
+<div class="paragraph">
+<p>The above values are calculated based on setup we are using in our shop floor.
+This process will enable the Centering table in Flux. Refer the image</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="img/c3.png" alt="c3"></span></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_how_to_use_centering_table">How to Use Centering Table:</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Open pickup glob: click on the P in bend navigator</p>
+</div>
+<div class="paragraph">
+<p>Select Centering table check box. It will use the centering table</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="img/c4.png" alt="c4"></span></p>
+</div>
+<div class="paragraph">
+<p>Now the part will be placed over the centering table for re-positioning before proceeding for bending.</p>
+</div>
+</div>
+</div>

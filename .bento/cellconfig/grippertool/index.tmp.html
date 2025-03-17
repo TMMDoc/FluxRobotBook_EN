@@ -1,0 +1,65 @@
+<div class="paragraph">
+<p>Beside the dxf import FluxRobot comes with a automated gripper tool. In order to find an efficient solution you might take minigripper.STL and modify the coordinates of the suction cups until you have a good solution. Example material is in 04_components\Gripper. The STL file (binary) represents the collision geometry, the dat file the position of the geometrical properties, information about the suction cup position, group and type.</p>
+</div>
+<div class="paragraph">
+<p>The recommended steps are the following:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Try to find a good bending solution by either exiting grippers in your library</p>
+</li>
+<li>
+<p>If there is not fiting gripper do a placement test of the cup positions in a gripper.dat file until you have a good solution. You see the accesibility of the gripper and collisions of the robot with the machine.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="img/pacement.png" alt="t" width="200"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>of if you go for a laser cut gripper you could modify the example drawing Gripper45-h100r160-p1.fx</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="img/drawing.png" alt="t" width="200"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>laser cut the parts to assemble a gripper</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="img/Grip1.jpg" alt="t" width="200"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>measure the height of the clutch in the activated state (suction on) and enter the value in the gripper.dat file</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="img/Definition2.png" alt="t" width="200"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>run the Matlab Gripper tool which creates you the collision contour of the gripper</p>
+</li>
+<li>
+<p>import the gripper in FluxBend via Database &gt; Bend Grippers</p>
+</li>
+<li>
+<p>check again your whole bending process, now Fluxrobot considers also the collisions of the gripper geometry</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="img/grip3.png" alt="t" width="200"></span></p>
+</div>
