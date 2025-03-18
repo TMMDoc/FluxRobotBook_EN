@@ -1,0 +1,35 @@
+<div class="paragraph">
+<p>The workflow depends much on your application. The following workflow is a suggestion for a typical cell with not a absolutely fixed setup.</p>
+</div>
+<div class="paragraph">
+<p>The workflow is divided into the following steps:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Creating a first layout
+In this step you arrange the components (e.g. position of the pallet and position of the parts on the pallet) in a way that you get a layout without position not reachable to the robot. You might need to do special gippers for your parts, which can be done with the laser templates and the gripper tool (&#8594; Gripper tool)</p>
+</li>
+<li>
+<p>If needed: Manufacturing of a new gripper</p>
+</li>
+<li>
+<p>Calibration of the Tools</p>
+</li>
+<li>
+<p>Measuring the components with the 3 pt measurement of the Fanuc control</p>
+</li>
+<li>
+<p>Loading frames.dg from the controller and calculate the precise position of the components (&#8594; Frame tool)</p>
+</li>
+<li>
+<p>Regenerating the Flux program with the precise positions of the compoentes</p>
+</li>
+<li>
+<p>Running the program in T2 mode to see if all motions line up as expected. If there are inaccuracies you might need to adjust the frames (see best practises)</p>
+</li>
+<li>
+<p>Running the program in Automode (safety fence closed)</p>
+</li>
+</ul>
+</div>

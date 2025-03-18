@@ -7,6 +7,7 @@ Index
   FanucAxlimits
   Layout
 Index
+  Workflow
   Pointer
   PinchGripper
   VacuumGripper
@@ -48,7 +49,7 @@ Index
 Index
   RNC
   Nomenclature
-  Coding
+  PostC2
   Index
     General
     PalletCenter
@@ -56,7 +57,6 @@ Index
     PalletAB13
     Dispenser
     SubBendXcycle
-  PostC2
   Index
     Operation
     FR_BgAllign
@@ -64,6 +64,7 @@ Index
     FR_Scale
     FR_GRipClose
     communication
+  Coding
 Index
   Layout
   Adjustments

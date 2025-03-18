@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="../res/tree.css">
   <link rel="stylesheet" href="../res/sibling.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <title>Flux .RNC output</title>
+  <title>Workflow</title>
 </head>
 <body id="site-body" onload="sLoaded()">
     <header id="site-header">
@@ -35,24 +35,24 @@
       </ul>
     </li>
     <li>
-      <button class="tree closed"></button>
-      <a href="../setup_robot/index.html">Setup the robot</a>
-      <ul class="hide">
-        <li><button class="tree blank"></button><a href="../setup_robot/workflow.html">Workflow</a></li>
-        <li><button class="tree blank"></button><a href="../setup_robot/pointer.html">Calibrate Pointer/Gauge</a></li>
-        <li><button class="tree blank"></button><a href="../setup_robot/pinchgripper.html">Calibrate Pinch Gripper</a></li>
-        <li><button class="tree blank"></button><a href="../setup_robot/vacuumgripper.html">Calibrate Vacuum Gripper</a></li>
-        <li><button class="tree blank"></button><a href="../setup_robot/setuprobot.html">Setup Robot to Machine</a></li>
-        <li><button class="tree blank"></button><a href="../setup_robot/pallet.html">Setup Pallet</a></li>
-        <li><button class="tree blank"></button><a href="../setup_robot/dispenser.html">Setup Dispenser</a></li>
-        <li><button class="tree blank"></button><a href="../setup_robot/partseparator.html">Setup PartSeparator</a></li>
-        <li><button class="tree blank"></button><a href="../setup_robot/doublesheet.html">Setup DoublesheetDetector</a></li>
-        <li><button class="tree blank"></button><a href="../setup_robot/regrip.html">Setup Regrip</a></li>
-        <li><button class="tree blank"></button><a href="../setup_robot/centering.html">Setup CenteringTable</a></li>
-        <li><button class="tree blank"></button><a href="../setup_robot/deposit.html">Setup Deposit</a></li>
-        <li><button class="tree blank"></button><a href="../setup_robot/toolchanger.html">ToolChanger</a></li>
-        <li><button class="tree blank"></button><a href="../setup_robot/gripperchanger.html">GripperChanger</a></li>
-        <li><button class="tree blank"></button><a href="../setup_robot/connectionhmi.html">Setup HMI PC</a></li>
+      <button class="tree open"></button>
+      <a href="index.html">Setup the robot</a>
+      <ul>
+        <li><button class="tree blank"></button><a class="active" href="workflow.html">Workflow</a></li>
+        <li><button class="tree blank"></button><a href="pointer.html">Calibrate Pointer/Gauge</a></li>
+        <li><button class="tree blank"></button><a href="pinchgripper.html">Calibrate Pinch Gripper</a></li>
+        <li><button class="tree blank"></button><a href="vacuumgripper.html">Calibrate Vacuum Gripper</a></li>
+        <li><button class="tree blank"></button><a href="setuprobot.html">Setup Robot to Machine</a></li>
+        <li><button class="tree blank"></button><a href="pallet.html">Setup Pallet</a></li>
+        <li><button class="tree blank"></button><a href="dispenser.html">Setup Dispenser</a></li>
+        <li><button class="tree blank"></button><a href="partseparator.html">Setup PartSeparator</a></li>
+        <li><button class="tree blank"></button><a href="doublesheet.html">Setup DoublesheetDetector</a></li>
+        <li><button class="tree blank"></button><a href="regrip.html">Setup Regrip</a></li>
+        <li><button class="tree blank"></button><a href="centering.html">Setup CenteringTable</a></li>
+        <li><button class="tree blank"></button><a href="deposit.html">Setup Deposit</a></li>
+        <li><button class="tree blank"></button><a href="toolchanger.html">ToolChanger</a></li>
+        <li><button class="tree blank"></button><a href="gripperchanger.html">GripperChanger</a></li>
+        <li><button class="tree blank"></button><a href="connectionhmi.html">Setup HMI PC</a></li>
       </ul>
     </li>
     <li>
@@ -100,37 +100,37 @@
       </ul>
     </li>
     <li>
-      <button class="tree open"></button>
-      <a href="index.html">FluxRobot NC-Coode</a>
-      <ul>
-        <li><button class="tree blank"></button><a class="active" href="rnc.html">Flux .RNC output</a></li>
-        <li><button class="tree blank"></button><a href="nomenclature.html">Nomenclature and Variables</a></li>
-        <li><button class="tree blank"></button><a href="postc2.html">Post Processor</a></li>
+      <button class="tree closed"></button>
+      <a href="../lsprogramming/index.html">FluxRobot NC-Coode</a>
+      <ul class="hide">
+        <li><button class="tree blank"></button><a href="../lsprogramming/rnc.html">Flux .RNC output</a></li>
+        <li><button class="tree blank"></button><a href="../lsprogramming/nomenclature.html">Nomenclature and Variables</a></li>
+        <li><button class="tree blank"></button><a href="../lsprogramming/postc2.html">Post Processor</a></li>
         <li>
           <button class="tree closed"></button>
-          <a href="framecycles/index.html">Flux Sub structure</a>
+          <a href="../lsprogramming/framecycles/index.html">Flux Sub structure</a>
           <ul class="hide">
-            <li><button class="tree blank"></button><a href="framecycles/general.html">General</a></li>
-            <li><button class="tree blank"></button><a href="framecycles/palletcenter.html">Sub_PalletCenter</a></li>
-            <li><button class="tree blank"></button><a href="framecycles/palletimage.html">Sub_PalletImage</a></li>
-            <li><button class="tree blank"></button><a href="framecycles/palletab13.html">Sub_PalletAB13</a></li>
-            <li><button class="tree blank"></button><a href="framecycles/dispenser.html">Sub_Dispenser</a></li>
-            <li><button class="tree blank"></button><a href="framecycles/subbendxcycle.html">Sub_BendXCycle</a></li>
+            <li><button class="tree blank"></button><a href="../lsprogramming/framecycles/general.html">General</a></li>
+            <li><button class="tree blank"></button><a href="../lsprogramming/framecycles/palletcenter.html">Sub_PalletCenter</a></li>
+            <li><button class="tree blank"></button><a href="../lsprogramming/framecycles/palletimage.html">Sub_PalletImage</a></li>
+            <li><button class="tree blank"></button><a href="../lsprogramming/framecycles/palletab13.html">Sub_PalletAB13</a></li>
+            <li><button class="tree blank"></button><a href="../lsprogramming/framecycles/dispenser.html">Sub_Dispenser</a></li>
+            <li><button class="tree blank"></button><a href="../lsprogramming/framecycles/subbendxcycle.html">Sub_BendXCycle</a></li>
           </ul>
         </li>
         <li>
           <button class="tree closed"></button>
-          <a href="fanuchw/index.html">Fanuc functions & macros</a>
+          <a href="../lsprogramming/fanuchw/index.html">Fanuc functions & macros</a>
           <ul class="hide">
-            <li><button class="tree blank"></button><a href="fanuchw/operation.html">General operation procedure</a></li>
-            <li><button class="tree blank"></button><a href="fanuchw/fr_bgallign.html">FR_BgAllign</a></li>
-            <li><button class="tree blank"></button><a href="fanuchw/fr_stacksearch.html">FR_StackSearch</a></li>
-            <li><button class="tree blank"></button><a href="fanuchw/fr_scale.html">FFR_Scale</a></li>
-            <li><button class="tree blank"></button><a href="fanuchw/fr_gripclose.html">FR_GRipClose</a></li>
-            <li><button class="tree blank"></button><a href="fanuchw/communication.html">Communication</a></li>
+            <li><button class="tree blank"></button><a href="../lsprogramming/fanuchw/operation.html">General operation procedure</a></li>
+            <li><button class="tree blank"></button><a href="../lsprogramming/fanuchw/fr_bgallign.html">FR_BgAllign</a></li>
+            <li><button class="tree blank"></button><a href="../lsprogramming/fanuchw/fr_stacksearch.html">FR_StackSearch</a></li>
+            <li><button class="tree blank"></button><a href="../lsprogramming/fanuchw/fr_scale.html">FFR_Scale</a></li>
+            <li><button class="tree blank"></button><a href="../lsprogramming/fanuchw/fr_gripclose.html">FR_GRipClose</a></li>
+            <li><button class="tree blank"></button><a href="../lsprogramming/fanuchw/communication.html">Communication</a></li>
           </ul>
         </li>
-        <li><button class="tree blank"></button><a href="coding.html">Coding tips for manual adjustment</a></li>
+        <li><button class="tree blank"></button><a href="../lsprogramming/coding.html">Coding tips for manual adjustment</a></li>
       </ul>
     </li>
     <li>
@@ -217,112 +217,52 @@
     </button>
   </div>
   <div>
-    <a href="index.html">FluxRobot NC-Coode</a>
+    <a href="index.html">Setup the robot</a>
   </div>
   <div>/</div>
   <div>
-    <a href="rnc.html">Flux .RNC output</a>
+    <a href="workflow.html">Workflow</a>
   </div>
 </nav>
 
             <div id="site-crumb-below">
                 <div id="site-toc-left">
                     <article id="article">
-                        <h1>Flux .RNC output</h1>
+                        <h1>Workflow</h1>
 <div class="paragraph">
-<p>The output of Flux:</p>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre>%1 (2024-09-24-11-43-45)
-G17 (XY level)
-G1 F3000 (Speed)
-G60 X0 K1 (Look ahead on)
-G201 J6 K100
-N1
-Q1=0
-(WristToTip: -19.3,0,279.3)    *-&gt; offset values of the gripper (Tool frame)*
-(MachineToRobot: 0 1000 -900 )        *-&gt; offset values of the Robot (user frame 1)*
-(GripperHoldXFM: -34.117615,-82.367209,1)      *-&gt; Zero coordinates of the part to do e.g. a laser engraving of suction cups*
-G01 J1 90 J2 0 J3 -20 J4 0 J5 20 J6 0 (Forward O:(-1354,-1051,226), X:0,1,0, Y:-1,0,0, Z:0,0,1 (0, 0, 90))  *-&gt; Home position*</pre>
-</div>
+<p>The workflow depends much on your application. The following workflow is a suggestion for a typical cell with not a absolutely fixed setup.</p>
 </div>
 <div class="paragraph">
-<p>N10</p>
+<p>The workflow is divided into the following steps:</p>
 </div>
-<div class="paragraph">
-<p>(Pick Safe)  <strong>&#8594; Name of the positon</strong></p>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre>G01 J1 61.4 J2 16.53 J3 -63.66 J4 -84.53 J5 -92.7 J6 -26.21 (Forward O:(-933,-961,-370), X:0.92,-0.38,0, Y:-0.38,-0.92,0, Z:0,0,-1 (180,
-0, -22.5))</pre>
-</div>
-</div>
-<div class="paragraph">
-<p>(Height)</p>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre>G01 J1 61.4 J2 23.14 J3 -70.75 J4 -84.24 J5 -92.01 J6 -19.15 (Inverse O:(-933,-961,-470), X:0.92,-0.38,0, Y:-0.38,-0.92,0, Z:0,0,-1 (180, 0, -22.5))</pre>
-</div>
-</div>
-<div class="paragraph">
-<p>&#8230;&#8203;</p>
-</div>
-<div class="paragraph">
-<p>M30</p>
-</div>
-<div class="paragraph">
-<p>Bend 0  <strong>&#8594; 50 ram values</strong></p>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre>0</pre>
-</div>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre>0.12895138517083637</pre>
-</div>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre>0.25741910528580547</pre>
-</div>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre>...</pre>
-</div>
-</div>
-<div class="paragraph">
-<p><strong>&#8594; 50 corresponding robot values</strong></p>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre>G01 J1 18.4 J2 -30.23 J3 -23.1 J4 114.37 J5 -45.95 J6 56.92 (Inverse O:(-34,-183,101), X:-0.92,0.38,0, Y:0.38,0.92,0, Z:0,0,-1 (180, 0, 157.5))</pre>
-</div>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre>G01 J1 18.41 J2 -30.36 J3 -22.51 J4 112.83 J5 -45.27 J6 58.73 (Inverse O:(-34,-183,104), X:-0.92,0.38,-0.01, Y:0.38,0.92,-0.01, Z:0,-0.02,-1 (-179.15, 0.35, 157.5))</pre>
-</div>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre>G01 J1 18.41 J2 -30.48 J3 -21.93 J4 111.25 J5 -44.63 J6 60.58 (Inverse O:(-34,-183,107), X:-0.92,0.38,-0.01, Y:0.38,0.92,-0.03, Z:0,-0.03,-1 (-178.3, 0.7, 157.51))</pre>
-</div>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre>G01 J1 18.41 J2 -30.58 J3 -21.37 J4 109.64 J5 -44.03 J6 62.45 (Inverse O:(-34,-183,109), X:-0.92,0.38,-0.02, Y:0.38,0.92,-0.04, Z:0,-0.05,-1 (-177.45, 1.05, 157.52))</pre>
-</div>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre>G01 J1 18.41 J2 -30.66 J3 -20.81 J4 107.99 J5 -43.46 J6 64.36 (Inverse O:(-34,-183,112), X:-0.92,0.38,-0.02, Y:0.38,0.92,-0.06, Z:0,-0.06,-1 (-176.61, 1.4, 157.54))</pre>
-</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Creating a first layout
+In this step you arrange the components (e.g. position of the pallet and position of the parts on the pallet) in a way that you get a layout without position not reachable to the robot. You might need to do special gippers for your parts, which can be done with the laser templates and the gripper tool (&#8594; Gripper tool)</p>
+</li>
+<li>
+<p>If needed: Manufacturing of a new gripper</p>
+</li>
+<li>
+<p>Calibration of the Tools</p>
+</li>
+<li>
+<p>Measuring the components with the 3 pt measurement of the Fanuc control</p>
+</li>
+<li>
+<p>Loading frames.dg from the controller and calculate the precise position of the components (&#8594; Frame tool)</p>
+</li>
+<li>
+<p>Regenerating the Flux program with the precise positions of the compoentes</p>
+</li>
+<li>
+<p>Running the program in T2 mode to see if all motions line up as expected. If there are inaccuracies you might need to adjust the frames (see best practises)</p>
+</li>
+<li>
+<p>Running the program in Automode (safety fence closed)</p>
+</li>
+</ul>
 </div>
 
                     </article>
@@ -332,8 +272,8 @@ G01 J1 90 J2 0 J3 -20 J4 0 J5 20 J6 0 (Forward O:(-1354,-1051,226), X:0,1,0, Y:-
                 </div>
             </div>
             <nav class="pagination">
-  <span class="prev"><a href="index.html">FluxRobot NC-Coode</a></span>
-  <span class="next"><a href="nomenclature.html">Nomenclature and Variables</a></span>
+  <span class="prev"><a href="index.html">Setup the robot</a></span>
+  <span class="next"><a href="pointer.html">Calibrate Pointer/Gauge</a></span>
 </nav>
 
         </div>
