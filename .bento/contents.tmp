@@ -27,12 +27,12 @@ Index
   Frame_Flexcell
 Index
   GripperInventory
-  CreateeditaGripper
   Index
     GripperDesign
     GripperTool
     Gripperimport
     cups
+  CreateeditaGripper
   BendCellSettings
 Index
   Pickup_pinch
@@ -42,7 +42,6 @@ Index
   Regrip
   Centering
   BendPos
-  BendSub
   deposit
   ToolChanger
   GripperChanger
@@ -65,23 +64,24 @@ Index
     FR_GRipClose
     communication
   Coding
+  Index
+    safety
+    Index
+      DigitalIngerface
+      Ethercat
+      RAinterface
+      security_network
+    Index
+      Index
+      Index
+      Index
+    Index
+  HMI
 Index
   Layout
+  gripper
+  reach
   Adjustments
-Index
-  safety
-  Index
-    DigitalIngerface
-    Ethercat
-    RAinterface
-    security_network
-  Index
-    Index
-    Index
-    Index
-  Index
-  Index
-  Index
 Index
   wiring
   RobWrist
@@ -89,16 +89,29 @@ Index
   Index
     DigIO
     AnalogIO
+    diginp
     Manifold
     Vacuum
     UserIO
+    Relay
+    terminals
   Index
-  Safety
-  IOoutput
 Index
+  Safety
+  schematics
 Index
   Part-Pickup
   Collisions-with-machine
   Overtravel-of-Axis
   Modification-of-Waypoints
   Collision-while-Insertion-Extraction
+Index
+  FanucFrames
+  DH
+  DefOfRotation
+  IOoutput
+Index
+  cellcomponents
+  pinch
+  gripper
+  Dispenser
