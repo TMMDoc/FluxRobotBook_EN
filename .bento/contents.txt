@@ -7,34 +7,6 @@ Index
   FanucAxlimits
   Layout
 Index
-  Workflow
-  Pointer
-  PinchGripper
-  VacuumGripper
-  setupRobot
-  pallet
-  Dispenser
-  PartSeparator
-  Doublesheet
-  Regrip
-  Centering
-  Deposit
-  ToolChanger
-  GripperChanger
-  ConnectionHMI
-Index
-  Frame_RACell
-  Frame_Flexcell
-Index
-  GripperInventory
-  Index
-    GripperDesign
-    GripperTool
-    Gripperimport
-    cups
-  CreateeditaGripper
-  BendCellSettings
-Index
   Pickup_pinch
   Pickup_vac
   PartSeparator
@@ -45,6 +17,20 @@ Index
   deposit
   ToolChanger
   GripperChanger
+Index
+  GripperInventory
+  Index
+    GripperDesign
+    GripperTool
+    Gripperimport
+    cups
+  CreateeditaGripper
+  BendCellSettings
+  Index
+    cellcomponents
+    pinch
+    gripper
+    Dispenser
 Index
   RNC
   Nomenclature
@@ -77,6 +63,26 @@ Index
       Index
     Index
   HMI
+Index
+  Workflow
+  startup
+  Pointer
+  PinchGripper
+  VacuumGripper
+  setupRobot
+  pallet
+  Dispenser
+  PartSeparator
+  Doublesheet
+  Regrip
+  Centering
+  Deposit
+  ToolChanger
+  GripperChanger
+  ConnectionHMI
+Index
+  Frame_RACell
+  Frame_Flexcell
 Index
   Layout
   gripper
